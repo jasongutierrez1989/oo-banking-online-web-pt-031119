@@ -20,8 +20,6 @@ class Transfer
     @receiver.deposit(amount)
   end
 
-  end
-
   def reverse_transfer
 
   end
