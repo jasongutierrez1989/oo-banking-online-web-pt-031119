@@ -17,8 +17,10 @@ class Transfer
   end
 
   def execute_transaction
-    @receiver.deposit(@amount)
-    @sender.balance -= @amount
+    receiver = BankAccount.new(@receiver)
+    sender = BankAccount.new(@sender)
+    receiver.deposit(@amount)
+    sender.balance -= @amount
     @status = 'complete'
   end
 
