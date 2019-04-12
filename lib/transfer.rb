@@ -16,8 +16,10 @@ class Transfer
     end
   end
 
-  def execute_transaction
-
+  def execute_transaction(amount)
+    .deposit(amount)
+  end
+    
   end
 
   def reverse_transfer
